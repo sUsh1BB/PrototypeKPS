@@ -17,6 +17,7 @@ public class MinionMovement : MonoBehaviour
     private int wpIndex;
     //private int loopSafe;
     public float speed = 1, stopDistance = 1;
+
     
 
 
