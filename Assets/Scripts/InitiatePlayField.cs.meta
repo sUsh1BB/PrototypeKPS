@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 35594089112b5f74b8cbe14c6b938085
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - vicPlane: {fileID: 7489401924767953993, guid: c85ee8b6760c51d408cf8154971cd892,
+      type: 3}
+  - dmgPlane: {fileID: 8323492059203174794, guid: 0f5610f23fa46f342818be9a48bab352,
+      type: 3}
+  - PlaneC1: {fileID: 1175137198717710974, guid: 9516eee858edfce47a29a79fa1c41efb,
+      type: 3}
+  - PlaneC2: {fileID: 4153999318877429437, guid: 808b4d2a6aeef38469ee912daf4f547b,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
