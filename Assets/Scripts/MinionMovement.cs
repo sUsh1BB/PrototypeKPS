@@ -28,8 +28,7 @@ public class MinionMovement : MonoBehaviour
     {
         nm = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
-        nm.acceleration = speed;
-        nm.stoppingDistance = stopDistance;
+
         WayPoints = new Transform[maxWaypoints];
 
         // WP-Zuweisung an das Array, welches in der Bewegungsroutine genutzt wird
@@ -49,7 +48,8 @@ public class MinionMovement : MonoBehaviour
     void Update()
     {
         Target = WayPoints[curWaypoint];
-
+        nm.acceleration = speed;
+        nm.stoppingDistance = stopDistance;
 
         float distance = Vector3.Distance(transform.position, Target.position);
 
