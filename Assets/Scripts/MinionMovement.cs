@@ -15,12 +15,8 @@ public class MinionMovement : MonoBehaviour
     public int maxWaypoints = 8;
     private int curWaypoint = 0;
     private int wpIndex;
-    //private int loopSafe;
+
     public float speed = 1, stopDistance = 1;
-
-
-
-
 
 
     // Start is called before the first frame update
@@ -35,7 +31,9 @@ public class MinionMovement : MonoBehaviour
         for(wpIndex=0; wpIndex < maxWaypoints; wpIndex++)
         {
             wp = GameObject.Find("WP" + curWaypoint);
+            //Debug
             Debug.Log("DIESE SCHLEIFE WIRD" + wpIndex + "MAL DURCHLAUFEN!");
+            //Debug
             WayPoints[curWaypoint] = wp.GetComponent<Transform>();
             Debug.Log(WayPoints[curWaypoint]);
             curWaypoint++;
