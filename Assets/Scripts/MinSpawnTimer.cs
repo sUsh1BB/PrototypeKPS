@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MinSpawnTimer : MonoBehaviour
 {
-    //ACHTUNG: WEITER AUSFEILEN, WIE GENAU GESPAWNED WIRD! vlt mit rays realisieren und kreisförmig spawnen?? 
-    //oder nacheinander wie bei lol, das wäre die einfachste variante
+    //ACHTUNG: WEITER AUSFEILEN, WIE GENAU GESPAWNED WIRD! vlt mit rays realisieren und kreisförmig spawnen??
     private bool minSpawned;
     private float spawnTimer;
     public float spawnTimerReset=5;
