@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 7072678318660771456}
   - component: {fileID: 4415394336165778997}
   - component: {fileID: 7450351342990432970}
+  - component: {fileID: 1953917620932345715}
   m_Layer: 0
   m_Name: dummyDMG
   m_TagString: Untagged
@@ -235,7 +236,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7556054878142241313}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2de37705a3ca5443834b4ca1c76125e, type: 3}
   m_Name: 
@@ -245,3 +246,21 @@ MonoBehaviour:
   maxWaypoints: 8
   speed: 1
   stopDistance: 1
+--- !u!114 &1953917620932345715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556054878142241313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b281402cc726d4d8065f2d7629eebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  WayPoints: []
+  speed: 1
+  stopDistance: 1
+  spawnPoints: []
+  mySpawnPoint: {fileID: 0}

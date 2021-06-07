@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Rigidbody))]
+
 public class BareMinionMovement : MonoBehaviour
 {
     NavMeshAgent nm;
@@ -26,11 +26,28 @@ public class BareMinionMovement : MonoBehaviour
         nm = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
 
-        if (spawnPoints == null)
+        if (spawnPoints.Length == 0)
         {
+            //Debug.Log("test");
             spawnPoints = GameObject.FindGameObjectsWithTag("Spawnpoint");
         }
 
+        //TESTAREA
+        int arLength = spawnPoints.Length;
+        int arLengthTest = arLength;
+        Debug.Log("so viele Objekte sind im Array" + arLength);
+        if (arLength > 0)
+        {
+            Debug.Log("folgende Objekte sind im Array");
+            for (int i = 0; i < arLength; i++)
+            {
+                --arLengthTest;
+ 
+                Debug.Log(spawnPoints[arLengthTest]);
+
+            }
+        }
+        //TESTAREA
     }
 
     // Update is called once per frame
